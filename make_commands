@@ -1,0 +1,1 @@
+clang -MJ compile_commands.json $@ @.clang_complete -E > /dev/null && sed -i -e '1i[' -e '$a]' compile_commands.json
